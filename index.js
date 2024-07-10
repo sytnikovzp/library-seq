@@ -14,3 +14,14 @@ const dbCheck = async () => {
 };
 
 dbCheck();
+
+const syncAuthorTable = async () => {
+  try {
+    await db.Author.sync();
+    console.log(`Sync table has been done!`);
+  } catch (error) {
+    console.log(`Can't sync table: `, error.message);
+  }
+};
+
+// syncAuthorTable();
