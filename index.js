@@ -25,3 +25,25 @@ const syncAllTables = async () => {
 };
 
 // syncAllTables();
+
+const dropBookTable = async () => {
+  try {
+    await db.Book.drop();
+    console.log(`Table ${db.Book.name} has been droped!`);
+  } catch (error) {
+    console.log(`Can't drop table: `, error.message);
+  }
+};
+
+// dropBookTable();
+
+const syncBookTable = async () => {
+  try {
+    await db.Book.sync();
+    console.log(`Sync table ${db.Book.name} has been done!`);
+  } catch (error) {
+    console.log(`Can't sync table: `, error.message);
+  }
+};
+
+// syncBookTable();
