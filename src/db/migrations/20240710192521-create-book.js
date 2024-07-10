@@ -16,12 +16,10 @@ module.exports = {
       },
       genre: {
         allowNull: false,
-        unique: true,
         type: Sequelize.STRING,
       },
       shelf: {
         allowNull: false,
-        unique: true,
         type: Sequelize.STRING,
       },
       description: {

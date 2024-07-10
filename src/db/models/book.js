@@ -21,12 +21,10 @@ module.exports = (sequelize, DataTypes) => {
       genre: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,
       },
       shelf: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,
       },
       description: DataTypes.TEXT,
       image: DataTypes.STRING,
