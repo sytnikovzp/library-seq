@@ -13,7 +13,8 @@
     "genAuthors": "npx sequelize model:generate --name Author --attributes full_name:string,email:string,country:string",
     "genGenres": "npx sequelize model:generate --name Genre --attributes title:string",
     "genCountry": "npx sequelize model:generate --name Country --attributes title:string,description:text",
-    "genShelf": "npx sequelize model:generate --name Shelf --attributes title:string,description:text"
+    "genShelf": "npx sequelize model:generate --name Shelf --attributes title:string,description:text",
+    "genCustomer": "npx sequelize model:generate --name Customer --attributes full_name:string,email:string,phone:string,password:string"
   },
   "keywords": [],
   "author": "",
