@@ -12,7 +12,8 @@
     "migun": "npx sequelize db:migrate:undo:all",
     "genAuthors": "npx sequelize model:generate --name Author --attributes full_name:string,email:string,country:string",
     "genGenres": "npx sequelize model:generate --name Genre --attributes title:string",
-    "genCountry": "npx sequelize model:generate --name Country --attributes title:string,description:text"
+    "genCountry": "npx sequelize model:generate --name Country --attributes title:string,description:text",
+    "genShelf": "npx sequelize model:generate --name Shelf --attributes title:string,description:text"
   },
   "keywords": [],
   "author": "",
