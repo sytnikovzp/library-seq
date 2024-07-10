@@ -15,13 +15,13 @@ const dbCheck = async () => {
 
 dbCheck();
 
-const syncAuthorTable = async () => {
+const syncAllTables = async () => {
   try {
-    await db.Author.sync();
-    console.log(`Sync table has been done!`);
+    await db.sequelize.sync();
+    console.log(`Sync all tables has been done!`);
   } catch (error) {
-    console.log(`Can't sync table: `, error.message);
+    console.log(`Can't sync all tables: `, error.message);
   }
 };
 
-// syncAuthorTable();
+// syncAllTables();

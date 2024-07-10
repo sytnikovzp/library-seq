@@ -10,7 +10,8 @@
     "dbdrop": "npx sequelize db:drop",
     "migall": "npx sequelize db:migrate",
     "migun": "npx sequelize db:migrate:undo:all",
-    "cmAuthors": "npx sequelize model:generate --name Author --attributes full_name:string,email:string,country:string"
+    "genAuthors": "npx sequelize model:generate --name Author --attributes full_name:string,email:string,country:string",
+    "genGenres": "npx sequelize model:generate --name Genre --attributes title:string"
   },
   "keywords": [],
   "author": "",
