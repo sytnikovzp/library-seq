@@ -15,7 +15,8 @@
     "genCountry": "npx sequelize model:generate --name Country --attributes title:string,description:text",
     "genShelf": "npx sequelize model:generate --name Shelf --attributes title:string,description:text",
     "genCustomer": "npx sequelize model:generate --name Customer --attributes full_name:string,email:string,phone:string,password:string",
-    "genOrder": "npx sequelize model:generate --name Order --attributes title:string,order_date:date,customer:string"
+    "genOrder": "npx sequelize model:generate --name Order --attributes title:string,order_date:date,customer:string",
+    "genBook": "npx sequelize model:generate --name Book --attributes title:string,genre:string,shelf:string,description:text,image:string"
   },
   "keywords": [],
   "author": "",
